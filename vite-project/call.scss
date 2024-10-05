@@ -1,0 +1,150 @@
+
+$aquamarine: #7FDBFF; 
+$grey: #7E7E82; 
+$pink: #FF3E79; 
+$black: #1B1C21;
+$white:  #FFFFFF;
+
+@font-face {
+    font-family: 'TT Lakes'; 
+  src: url(./TTLakes/TTLakes-Medium.woff)
+  }
+
+.oderCall {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'TT Lakes'; 
+
+    &__cont {
+        position: fixed;
+        top: 0;
+        right: 0;
+        max-width: 440px;
+        height: 100%;
+        z-index: 99;
+         transform: translateX(200%);
+        border-left: 1px solid $aquamarine;
+        background-color: #FFFFFF;
+        z-index: 50;
+        transition:1s;
+      &.openn {
+        transform: translateX(0%);
+        transition:1s;
+      }
+    }
+    &__close {
+        display: flex;
+        position: absolute;
+        right: 473px;
+        top: 32px;
+        width: 40px;
+        height: 40px;
+        background-image: url('./img/burger.svg');
+        cursor: pointer;
+        border: none;
+        &:hover {
+            transform: rotate(360deg);
+            transition: transform 0.5s;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 766px) {
+        &__close {
+            display: none;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    &__blockH1 {
+        display: flex;
+        margin-left: -32px;
+        width: 3px;
+        height: 40px;
+        background-image: url('./img/highlight.svg');
+        background-repeat: no-repeat;
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    &__heading {
+        position: absolute;
+        margin: 0px;
+        color: $black;
+        padding-left: 32px;
+        text-align: center;
+    }
+
+    &__block {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    &__inp {
+        width: 100%;
+        margin-bottom: 16px;
+        border-radius: 10px;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+    }
+
+    &__submit {
+        margin-top: 23px;
+        margin-left: auto;
+        margin-right: 0;
+        font-size: 14px;
+        color: $grey;
+    }
+
+    &__linkPers {
+        color: $pink;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__inp{ 
+        padding: 12px;
+    }
+    &__button{
+        position: relative;
+        margin-left: auto; 
+        justify-content: space-between; 
+        background-image: url('./img/Group\ 10.svg');
+        background-repeat: no-repeat;
+        border: none;
+        width: 123px;
+        height: 32px;
+        padding: 0px;
+        cursor: pointer;
+        background-color: $white;
+    }
+    &__close320{
+        width: 40px;
+        height: 40px;
+        background-image: url('./img/burger.svg');
+        border: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-top: 24px;
+        background-color: $white;
+        &:hover {
+            transform: rotate(360deg);
+            transition: transform 0.5s;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        &__close {
+            display: none;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1500px) {
+        &__close320 {
+            display: none;
+        }
+    }
+}
