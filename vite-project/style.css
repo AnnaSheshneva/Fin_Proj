@@ -509,6 +509,7 @@ th {
   }
   .nav__list{
     flex-wrap: nowrap;
+    overflow: scroll;
   }
   .main__section-container{
       display: block;
