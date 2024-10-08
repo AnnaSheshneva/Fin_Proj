@@ -1,33 +1,26 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const swiperSlides = document.querySelectorAll('.swiperSlide_reper');
 
-import Swiper from 'swiper';
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  function slideHeight() {
+    let maxHeight = 0;
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    swiperSlides.forEach(slide => {
+      slide.style.height = 'auto';
+    });
 
-  // And if we need scrollbar
- 
+    
+    swiperSlides.forEach(slide => {
+      if (slide.offsetHeight > maxHeight) {
+        maxHeight = slide.offsetHeight;
+      }
+    });
+
+    swiperSlides.forEach(slide => {
+      slide.style.height = maxHeight + 'px';
+    });
+  }
+
+  slideHeight();
+
+  window.addEventListener('resize', slideHeight);
 });
-  
-  const swir = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 100,
-  });
-  let swiperr = new Swiper('.swiperSlide__cont', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    slidesPerView: 1.5,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-  });

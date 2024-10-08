@@ -5,4 +5,6 @@ import'./index.js'
 import'./call.scss'
 import'./swiper.css'
 import'./call.js'
+import'./menu.css'
+import'./swiper.js'
 

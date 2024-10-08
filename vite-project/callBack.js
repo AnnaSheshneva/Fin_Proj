@@ -19,7 +19,7 @@ const callbackClose320 = document.querySelector('.callback__close320');
               }
     
           document.addEventListener('click',  function(event) {
-            if (!callBack.contains(event.target) && !callbackOpenBut.contains(event.target)) {
+            if (!callBack.contains(event.target) && !callbackOpen.contains(event.target)) {
                 callBack.classList.remove('openn');
             }
         })

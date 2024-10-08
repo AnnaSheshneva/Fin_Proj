@@ -1,0 +1,157 @@
+.cont_menu {
+    font-family: 'TT Lakes'; 
+    position: fixed;
+    z-index: 5;
+    margin-right: 24px;
+    padding-top: 24px;
+    top: 0;
+    left: 0;
+    width: 320px;
+    box-shadow: 5px 0 10px #0E185033;
+    overflow: scroll;
+    background-color: #FFFFFF;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  .cont_menu.open{
+    transform: translateX(0);
+  }
+  
+  .header_icon {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  .hoverr:hover{
+    filter: drop-shadow(0 0 0.75rem #4a192c );
+    cursor: pointer;
+  }
+  .search_2{
+    display: none;
+  }
+  
+  .group {
+    padding-left: 16px;
+  }
+  .search{
+    padding-left: 94px;
+    margin-right: 16px;
+  }
+  .menu_list {
+    min-height: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0;
+   grid-template-columns: 1fr;
+  }
+  .menu_list_ul {
+    list-style: none;
+    padding: 0px;
+    
+  }
+  .menu_list_li {
+    display: grid;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+    padding-left: 16px;
+    cursor: pointer;
+  }
+  .menu_list_li:last-child{
+    margin-bottom: 0px;
+  }
+  .menu_list_li:hover {
+    color: #7E7E82;
+    
+  }
+  .img_menu:hover {
+    align-items: center;
+    background-image: url(./img/highlight.svg);
+    background-repeat: no-repeat;
+  }
+  .footer_menu {
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    width: 320px;
+    background-color: #FFFFFF;
+  }
+  .footer_icon {
+    display: flex;
+    gap: 16px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+  
+  
+  .contacts {
+    padding-left: 16px;
+   
+  }
+  .mail {
+    margin-bottom: 12px;
+  }
+  .phone {
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-family: 'TT Lakes-Bold'
+  }
+  .lang {
+  display: flex;
+   gap: 7px;
+   padding-bottom: 32px;
+  }
+  .lang_leng:hover{
+    color: #7E7E82;
+  }
+  .navBrands__but{
+    background: none;
+  border: none;
+   }
+  
+  @media (min-width:360px) and (max-width:766px){
+    .cont_menu{
+        width: 360px;
+    }
+    .search{
+        padding-left: 111px;
+        margin-right: 24px;
+    }
+    .menu_list_li {
+        padding-left: 24px;
+    }
+    .footer_icon {
+        padding-left: 24px;
+        margin-bottom: 16px;
+    }
+    .contacts {
+        padding-left: 24px;
+       
+    }
+  }
+  @media(min-width:767px){
+    .cont_menu{
+        width: 320px;
+    }
+    .search{
+        padding-left: 78px;
+        margin-right: 24px;
+    }
+    .menu_list_li {
+        padding-left: 24px;
+    }
+    .footer_icon {
+        padding-left: 24px;
+        margin-bottom: 16px;
+    }
+    .phone{
+        margin-bottom: 40px;
+    }
+    .contacts {
+        padding-left: 24px;
+    }
+  }
+  
+  
