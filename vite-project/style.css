@@ -12,7 +12,6 @@ src: url(./TTLakes/TTLakes-Bold.woff);
   src: url(./TTLakes/TTLakes-Light.woff);
 }
 
-
 body {
   margin: 0px;
   padding: 0px;
@@ -772,7 +771,17 @@ border: none;
 }
 }
 
-@media (min-width:1120px) and (max-width:1600px) {
+@media (min-width:1120px) {
+  body{
+    max-width: 1450px;
+    margin: 0 auto; 
+  }
+  .wind {
+    
+    background-color: white; 
+    display: flex;
+    width: 100%;
+  }
   .sectionServis{
     padding-top: 0px;
   }
@@ -782,9 +791,7 @@ border: none;
   body{
       background-color: #F8F8F8;
   }
-  .cont_menu {
-      display: none;
-  }
+  
   .head__cont_menu {
       display: none;
   }

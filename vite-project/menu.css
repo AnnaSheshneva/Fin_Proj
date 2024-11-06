@@ -1,3 +1,5 @@
+
+
 .cont_menu {
     font-family: 'TT Lakes'; 
     position: fixed;
@@ -8,9 +10,10 @@
     left: 0;
     width: 320px;
     box-shadow: 5px 0 10px #0E185033;
-    overflow: scroll;
     background-color: #FFFFFF;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
     transform: translateX(-100%);
   }
   .cont_menu.open{
@@ -39,11 +42,12 @@
     margin-right: 16px;
   }
   .menu_list {
-    min-height: 100%;
-    display: grid;
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    overflow-y: auto;
+  
     margin: 0;
     padding: 0;
-   grid-template-columns: 1fr;
+   
   }
   .menu_list_ul {
     list-style: none;
@@ -72,10 +76,7 @@
     background-repeat: no-repeat;
   }
   .footer_menu {
-    position: fixed;
-    bottom: 0; 
-    left: 0; 
-    width: 320px;
+   
     background-color: #FFFFFF;
   }
   .footer_icon {
@@ -154,4 +155,27 @@
     }
   }
   
-  
+  @media (min-width:1120px) {
+    .contain {
+      width: 320px;
+      margin: 0;
+      padding: 0;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      
+    }
+    .cont_menu{
+      position: static;
+      margin-right: 24px;
+      padding-top: 24px;
+      transform: translateX(0);
+      width: 275px;
+      box-shadow: none;
+    }
+    .burger{
+      display: none;
+    }
+    .search{
+      padding-left: 119px;
+      margin-right: 0;
+    }
+  }

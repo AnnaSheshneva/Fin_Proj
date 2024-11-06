@@ -23,14 +23,16 @@ $white:  #FFFFFF;
         max-width: 440px;
         height: 100%;
         z-index: 99;
-         transform: translateX(200%);
+        transform: translateX(200%);
         border-left: 1px solid $aquamarine;
         background-color: #FFFFFF;
         z-index: 50;
         transition:1s;
+        
       &.openn {
         transform: translateX(0%);
         transition:1s;
+       
       }
     }
     &__close {
@@ -112,15 +114,17 @@ $white:  #FFFFFF;
     &__button{
         position: relative;
         margin-left: auto; 
-        justify-content: space-between; 
-        background-image: url('./img/Group\ 10.svg');
-        background-repeat: no-repeat;
+        width: 130px;
+        border-radius: 20px;
+        
         border: none;
         width: 123px;
         height: 32px;
         padding: 0px;
         cursor: pointer;
-        background-color: $white;
+        background-color: $pink;
+        color: $white;
+        font-family: 'TT Lakes'; 
     }
     &__close320{
         width: 40px;

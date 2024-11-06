@@ -26,7 +26,3 @@ const callbackClose320 = document.querySelector('.callback__close320');
   
 
 
-
-
-        
-

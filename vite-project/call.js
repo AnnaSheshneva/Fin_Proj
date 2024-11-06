@@ -16,9 +16,9 @@ const callClose = document.querySelector('.oderCall__close');
               callClose320.onclick = function() {
               call.classList.remove('openn');
               }
-              document.onclick = function(even) {
+              document.addEventListener('click',  function(even) {
                 if (!call.contains(even.target) && !checkstatus1120_Open.contains(even.target) && !checkstatus_Open.contains(even.target)) {
                     call.classList.remove('openn');
                 }
-            }
+            })
    

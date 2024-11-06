@@ -26,10 +26,10 @@ $white:  #FFFFFF;
         transform: translateX(200%);
         background-color: #FFFFFF;
         transition:1s;
-
         &.openn {
             transform: translateX(0%);
             transition:1s;
+           
         }
     }
 
@@ -101,15 +101,16 @@ $white:  #FFFFFF;
     &__button {
         position: relative;
         margin-left: auto; 
-        justify-content: space-between; 
-        background-image: url('./img/Group\ 10.svg');
-        background-repeat: no-repeat;
+        width: 130px;
+        border-radius: 20px;
         border: none;
         width: 123px;
         height: 32px;
         padding: 0px;
         cursor: pointer;
-        background-color: $white;
+        background-color: $pink;
+        color: $white;
+        font-family: 'TT Lakes'; 
     }
 
     &__linkPers {
